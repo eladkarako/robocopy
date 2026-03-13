@@ -4,7 +4,7 @@ RoboCopy is a file copy program that comes with Windows.
 newer versions are a less portable since their string-table is stored in few files under your Windows installation folder..  
 (`en-US/robocopy.exe.mui`).  
 
-I've embedded it into the exe, so you can just copy it anywhere you previously had your old `RobotCopy.exe` file.  
+I've embedded it into the exe, so you can just copy it anywhere you previously had your old `RoboCopy.exe` file.  
 also there is a proper manifest without dependencies that I use everywhere,  
 with `SegmentHeap` and `longPathAware`, not sure if it would make any difference,  
 put this into a `.reg` file, run it as admin, and reboot to make sure the manifest value has any effect..  
@@ -1061,6 +1061,7 @@ timeout /t 5 1>&2
 exit /b %EXIT_CODE%
 
 ```
+
 
 
 
